@@ -34,7 +34,7 @@ function search(){
     //return shape filter
     var returnShape= returnCountry.filter(shape => shape.shape === searchShape);
     //return results on table
-    table.text('');
+    table.text('')
     returnCity.forEach(resultRow => {
         var newrows= table.append('tr');
         Object.values(resultRow).forEach(value => newrows.append('td').text(value));
@@ -45,8 +45,6 @@ function search(){
 var button= d3.select('#filter-btn');
 button.on('click', search);
 
-
-//PART TWO
 
 
 

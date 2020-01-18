@@ -26,7 +26,6 @@ function search(){
         var newrows= table.append('tr');
         Object.values(resultRow).forEach(value => newrows.append('td').text(value));
     });
-
 }
 
 //call back function on search
